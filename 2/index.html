@@ -6,34 +6,32 @@
     <title>HTML Academy: Техномарт</title>
     <base href="https://htmlacademy-htmlcss.github.io/111572-technomart/2/">
 </head>
-  <body>
-
    <body>
-    <header class="main-header">
-      <nav class="top-navigation">
-        <a class="main-header-logo">
-          <img src="img/logo.png" width="220" height="45" alt="Логотип магазина  «Техномарт»">
+    <header class="header">
+      <nav class="header_top_navigation">
+        <a class="header_top_navigation_logo">
+          <img src="img/logo.png" width="220" height="45" alt="Техномарт">
         </a>
-        <ul class="top-menu">
+        <ul class="header_top_navigation_menu">
           <li><a href="#">Поиск</a></li>
           <li><a href="#">Закладки</a></li>
           <li><a href="#">Корзина</a></li>
           <li><a href="#">Оформить заказ</a></li>
         </ul>
       </nav>
-      <nav class = "middle-navigation">
-      	<p class="about-shop">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-		<form>
-			<button class = "phone">+7(812)555-05-55</button>
-			<p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      <nav class = "header_middle_navigation">
+      	<p class="header_middle_navigation_p">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+		<form class="header_adress_form">
+			<button class = "header_adress_form_phone">+7(812)555-05-55</button>
+			<p class="header_adress_form_address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 		</form>
-      	 <ul class="user-navigation">
-      	 <li class="registration">Регистрация</li>
-         <li class="login-link">Вход</li>
+      	 <ul class="header_user_navigation">
+      	 <li class="header_user_navigation_registration">Регистрация</li>
+         <li class="header_user_navigation_login-link">Вход</li>
         </ul>
       </nav>
-      <nav class = "main-navigation">
-      	<ul class="site-navigation">
+      <nav class = "header_main_navigation">
+      	<ul class="header_main_navigation_site_navigation">
           <li><a href="info.html">Главная</a></li>
           <li><a href="company.html">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
@@ -44,122 +42,115 @@
         </ul>
       </nav>
     </header>
-    <main>
-    	<section class="shop-products">
-    	<nav class="top-section">
-    			<ul>
-    				<li>Материалы</li>
-    				<li>Инструменты</li>
-    				<li>Техника</li>
+    <main class="container">
+      <h1>Техномарт</h1>
+    	<section class="container_shop">
+    	   <ul class="container_shop_top_section">
+    				<li class="top_section_li">Материалы</li>
+    				<li class="top_section_li">Инструменты</li>
+    				<li class="top_section_li">Техника</li>
     			</ul>
-    	</nav>
-    	<div class="main-section">
-    		<div class="slider">Слайдер</div>
-    		<nav class="side-section">
-    			<ul>
-    				<li>Скидки 50%</li>
-    				<li>Доставка</li>
+    	<div class="container_shop_main_section">
+    		<div class="main_section_slider">Слайдер</div>
+    		<ul  class="main_section_side-section">
+    				<li class="main_section_side-section_li">Скидки 50%</li>
+    				<li class="main_section_side-section_li">Доставка</li>
     			</ul>
-    		</nav>
-    	</div>	
-    	</section>
-    	<section class="popular-product">
-    	<div class="product_top">
-    		<h2>Популярные товары</h2>
-    		<button>Все популярные товары</button>
-    	</div>
-    	<nav class="top-section">
-    			<ul>
-    				<li class="card">Карточка товара</li>
-    				<li class="card">Карточка товара</li>
-    				<li class="card">Карточка товара</li>
-    				<li class="card">Карточка товара</li>
-    			</ul>
-    	</nav>
-    	</section>
-    	<section class="popular-makers">
-    	<div class="makers_top">
-    		<h2>Популярные производители</h2>
-    		<button>Все популярные производители</button>
-    	</div>
-    	<nav class="top-section">
-    			<ul>
-    				<li><img src="http://placehold.it/150x100"></li>
-    				<li><img src="http://placehold.it/150x100"></li>
-    				<li><img src="http://placehold.it/150x100"></li>
-    				<li><img src="http://placehold.it/150x100"></li>
-    				<li><img src="http://placehold.it/150x100"></li>
-    				<li><img src="http://placehold.it/150x100"></li>
-    				<li><img src="http://placehold.it/150x100"></li>
-    				<li><img src="http://placehold.it/150x100"></li>
-    			</ul>
-    	</nav>
-    	</section>
-    	<section class="services">
-    	<div class="service_top">
-    		<h2>Сервисы</h2>
-    		<p>Сервисы  Хороший интернет-магазин отличается от плохого не только ценами. Мы стараемся сделать все ваши покупки приятными.</p>
-    	</div>
-    	<nav class="side-menu">
-    			<ul>
-    				<li>Доставка</li>
-    				<li>Гарантия</li>
-    				<li>Кредит</li>
-    			</ul>
-    	</nav>
-    	<div class = "menu-information">
-    		<h3>Доставка</h3>
-    		<p>Доставка  Мы с удовольствием доставим ваш товар прямо  к вашему подъезду совершенно бесплатно. Ведь мы неплохо заработаем поднимая его на ваш этаж!</p>
-    		<img src="http://placehold.it/150x100">		
     	</div>
     	</section>
-    	<section class="about-company">
-    	<div class="ac-company">
-    		<p></p>
-    		<p></p>
-    		<ul>
-    			<li>Деловые линии</li>
-    			<li>Автортрейдинг</li>
-    			<li>ЖелДорЭкспедиция</li>
+    	<section class="container_products">
+    	<div class="container_products_product_top">
+    		<h2 class="container_products_product_top_h2">Популярные товары</h2>
+    		<button class="container_products_product_top_button">Все популярные товары</button>
+    	</div>
+    	<ul class="container_products_top_section">
+    				<li class="container_products_top_section_card">Карточка товара</li>
+    				<li class="container_products_top_section_card">Карточка товара</li>
+    				<li class="container_products_top_section_card">Карточка товара</li>
+    				<li class="container_products_top_section_card">Карточка товара</li>
+    	</ul>
+    	</section>
+    	<section class="container_makers">
+    	<div class="container_makers_top">
+    		<h2 class="container_makers_top_h2">Популярные производители</h2>
+    		<button class="container_makers_top_button">Все популярные производители</button>
+    	</div>
+    	<ul class="container_makers_top_section">
+    				<li class="container_makers_top_section_li"><img src="http://placehold.it/150x100" alt="image"></li>
+    				<li class="container_makers_top_section_li"><img src="http://placehold.it/150x100" alt="image"></li>
+    				<li class="container_makers_top_section_li"><img src="http://placehold.it/150x100" alt="image"></li>
+    				<li class="container_makers_top_section_li"><img src="http://placehold.it/150x100" alt="image"></li>
+    				<li class="container_makers_top_section_li"><img src="http://placehold.it/150x100" alt="image"></li>
+    				<li class="container_makers_top_section_li"><img src="http://placehold.it/150x100" alt="image"></li>
+    				<li class="container_makers_top_section_li"><img src="http://placehold.it/150x100" alt="image"></li>
+    				<li class="container_makers_top_section_li"><img src="http://placehold.it/150x100" alt="image"></li>
+    			</ul>
+    	</section>
+    	<section class="container_services">
+    	   <div class="container_services_service_top">
+    		     <h2 class="container_services_service_top_h2">Сервисы</h2>
+    		     <p class="container_services_service_top_p">Сервисы  Хороший интернет-магазин отличается от плохого не только ценами. Мы стараемся сделать все ваши покупки приятными.</p>
+    	   </div>
+    	<nav class="container_services_side_menu">
+    			<ul class="container_makers_top_section_ul">
+    				<li class="container_makers_top_section_li">Доставка</li>
+    				<li class="container_makers_top_section_li">Гарантия</li>
+    				<li class="container_makers_top_section_li">Кредит</li>
+    			</ul>
+    	</nav>
+    	<div class = "container_services_menu_information">
+    		<h3 class="container_services_menu_information_h3">Доставка</h3>
+    		<p class="container_services_menu_information_p">Доставка  Мы с удовольствием доставим ваш товар прямо  к вашему подъезду совершенно бесплатно. Ведь мы неплохо заработаем поднимая его на ваш этаж!</p>
+    		<img src="http://placehold.it/150x100" alt="image">
+    	</div>
+    	</section>
+    	<section class="container_about_company">
+    	<div class="container_ac_company">
+    		<p class="container_ac_company_p"></p>
+    		<p class="container_ac_company_p"></p>
+    		<ul class="container_ac_company_ul">
+    			<li class="container_ac_company_li">Деловые линии</li>
+    			<li class="container_ac_company_li">Автортрейдинг</li>
+    			<li class="container_ac_company_li">ЖелДорЭкспедиция</li>
     		</ul>
-    	<button>Подробнее о компании</button>
+    	<button class="container_ac_company_button">Подробнее о компании</button>
     	</div>
-    	<div class="ac-contacts">
-    	<p></p>
-    	<img class="maps" src="http://placehold.it/150x100">
-    	<button>Заблудились? Напишите нам!</button>
+    	<div class="container_ac_contacts">
+    	<p class="container_ac_contacts_p"></p>
+    	<img class="maps" src="http://placehold.it/150x100" alt="image">
+    	<button class="container_ac_contacts_button">Заблудились? Напишите нам!</button>
     	</div>
     	</section>
     </main>
-	<footer>
-		<nav class="footer-navigation">
-        <a class="main-header-logo">
-          <img src="img/logo.png" width="220" height="45" alt="Логотип магазина  «Техномарт»">
+	<footer class="footer">
+		<nav class="footer_navigation">
+        <a class="footer_navigation_logo">
+          <img src="img/logo.png" width="220" height="45" alt="Техномарт">
         </a>
-        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-</p>
+        <p class="footer_navigation_p">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-</p>
         <p>+7(812)555-05-55</p>
-        <ul class="footer-menu">
-          <li><a href="#">Компания</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="#">Каталог</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Контакты</a></li>
-          <li><a href="#">Материалы</a></li>
-          <li><a href="#">Техника</a></li>
-          <li><a href="#">Инструмент</a></li>
-          <li><a href="#">Спецпредложения</a></li>
+        <ul class="footer_navigation_menu">
+          <li class="footer_navigation_menu_li"><a href="#">Компания</a></li>
+          <li class="footer_navigation_menu_li"><a href="#">Новости</a></li>
+          <li class="footer_navigation_menu_li"><a href="#">Каталог</a></li>
+          <li class="footer_navigation_menu_li"><a href="#">Доставка</a></li>
+          <li class="footer_navigation_menu_li"><a href="#">Контакты</a></li>
+          <li class="footer_navigation_menu_li"><a href="#">Материалы</a></li>
+          <li class="footer_navigation_menu_li"><a href="#">Техника</a></li>
+          <li class="footer_navigation_menu_li"><a href="#">Инструмент</a></li>
+          <li class="footer_navigation_menu_li"><a href="#">Спецпредложения</a></li>
         </ul>
       </nav>
-      <div class="footer-bottom">
-      	<p class="copyright"></p>
-      	<ul class="social">
-      		<li></li>
-      		<li></li>
-      		<li></li>
+      <div class="footer_bottom">
+      	<p class="footer_bottom_copyright"></p>
+      	<ul class="footer_bottom_social">
+      		<li class="footer_bottom_social_li"></li>
+      		<li class="footer_bottom_social_li"></li>
+      		<li class="footer_bottom_social_li"></li>
       	</ul>
-      	<p>© 2010–2017 Компания «Техномарт» Все права защищены.</p>
-      	<p>Обратная связь: mail@htmlacademy.ru</p>
-      	<p>Разработано — htmlacademy.ru</p>
+      	<p class="footer_bottom_social_p">© 2010–2017 Компания «Техномарт» Все права защищены.</p>
+      	<p class="footer_bottom_social_p">Обратная связь: mail@htmlacademy.ru</p>
+      	<p class="footer_bottom_social_p">Разработано — htmlacademy.ru</p>
       </div>
 	</footer>
   </body>
