@@ -64,26 +64,26 @@
     <section class="filtres">
       <h2 class="filtres__title visually-hidden">Фильтр товаров</h2>
           <form class="filtres__form" method="get" action="https://echo.htmlacademy.ru">
-                <fieldset>
-                  <legend>Цена:</legend>
+                <fieldset class="price">
+                  <legend class="price_legend">Цена:</legend>
                 </fieldset>
 
-                <fieldset>
-                   <legend>Производители:</legend>
-                      <ul>
-                        <li class="filter-option"><input class = "visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch">BOSCH</li>
-                        <li class="filter-option"><input class = "visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol">ИНТЕРСКОЛ</li>
-                        <li class="filter-option"><input class = "visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita">MAKITA</li>
-                        <li class="filter-option"><input class = "visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt">DEWALT</li>
-                        <li class="filter-option"><input class = "visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi">HITACHI</li>
+                <fieldset class="makers">
+                   <legend class="makers_legend">Производители:</legend>
+                      <ul class="makers_list">
+                        <li class="makers_list filter-option"><input class = "visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch">BOSCH</li>
+                        <li class="makers_list filter-option"><input class = "visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol">ИНТЕРСКОЛ</li>
+                        <li class="makers_list filter-option"><input class = "visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita">MAKITA</li>
+                        <li class="makers_list filter-option"><input class = "visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt">DEWALT</li>
+                        <li class="makers_list filter-option"><input class = "visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi">HITACHI</li>
                       </ul>
                 </fieldset>
 
-                <fieldset>
-                   <legend>Питание:</legend>
-                        <ul>
-                        <li class="filter__option"><input class = "visually-hidden filter__input filter__input-radio" type="radio" name="battery">АККУМУЛЯТОРНЫЕ</li>
-                        <li class="filter__option"><input class = "visually-hidden filter__input filter__input-radio" type="radio" name="network">СЕТЕВЫЕ</li>
+                <fieldset class="power">
+                   <legend class="power_legend">Питание:</legend>
+                        <ul class="power_list">
+                        <li class="power_list filter__option"><input class = "visually-hidden filter__input filter__input-radio" type="radio" name="battery">АККУМУЛЯТОРНЫЕ</li>
+                        <li class="power_list filter__option"><input class = "visually-hidden filter__input filter__input-radio" type="radio" name="network">СЕТЕВЫЕ</li>
                       </ul>
                 </fieldset>
                 <button type = "submit" class="filter__button button">ПОКАЗАТЬ</button>
@@ -94,112 +94,130 @@
       <h2 class="catalog__title visually-hidden">Каталог товаров</h2>
           <ul class="products">
             <li class= "products-item">
-              <h3 class="products-title"><a href="#">Перфоратор BOSCH</a></h3>
-              <p class="products-p">
-                <a href="#">
-                <img class="products-img" src="http://placehold.it/150x100" width="" height="" alt="">
-                </a>
-              </p>
-              <p class="products-price">
-              <b>20000</b>
-              <a class="products-button" href="#">25000</a>
-              </p>
+              <div class = "card">
+                <h3 class="card-title"><a href="#">Перфоратор BOSCH</a></h3>
+                <p class="card-p">
+                  <a href="#">
+                  <img class="card-img" src="http://placehold.it/150x100" width="" height="" alt="">
+                  </a>
+                </p>
+                <p class="card-price">
+                <b>20000</b>
+                <a class="card-button" href="#">25000</a>
+                </p>
+              </div>
             </li>
             <li class= "products-item">
-              <h3 class="products-title"><a href="#">Перфоратор BOSCH</a></h3>
-              <p class="products-p">
-                <a href="#">
-                <img class="products-img" src="http://placehold.it/150x100" width="" height="" alt="">
-                </a>
-              </p>
-              <p class="products-price">
-              <b>20000</b>
-              <a class="products-button" href="#">25000</a>
-              </p>
+              <div class = "card">
+                <h3 class="card-title"><a href="#">Перфоратор BOSCH</a></h3>
+                <p class="card-p">
+                  <a href="#">
+                  <img class="card-img" src="http://placehold.it/150x100" width="" height="" alt="">
+                  </a>
+                </p>
+                <p class="card-price">
+                <b>20000</b>
+                <a class="card-button" href="#">25000</a>
+                </p>
+              </div>
             </li>
             <li class= "products-item">
-              <h3 class="products-title"><a href="#">Перфоратор BOSCH</a></h3>
-              <p class="products-p">
-                <a href="#">
-                <img class="products-img" src="http://placehold.it/150x100" width="" height="" alt="">
-                </a>
-              </p>
-              <p class="products-price">
-              <b>20000</b>
-              <a class="products-button" href="#">25000</a>
-              </p>
+              <div class = "card">
+                <h3 class="card-title"><a href="#">Перфоратор BOSCH</a></h3>
+                <p class="card-p">
+                  <a href="#">
+                  <img class="card-img" src="http://placehold.it/150x100" width="" height="" alt="">
+                  </a>
+                </p>
+                <p class="card-price">
+                <b>20000</b>
+                <a class="card-button" href="#">25000</a>
+                </p>
+              </div>
             </li>
             <li class= "products-item">
-              <h3 class="products-title"><a href="#">Перфоратор BOSCH</a></h3>
-              <p class="products-p">
-                <a href="#">
-                <img class="products-img" src="http://placehold.it/150x100" width="" height="" alt="">
-                </a>
-              </p>
-              <p class="products-price">
-              <b>20000</b>
-              <a class="products-button" href="#">25000</a>
-              </p>
+              <div class = "card">
+                <h3 class="card-title"><a href="#">Перфоратор BOSCH</a></h3>
+                <p class="card-p">
+                  <a href="#">
+                  <img class="card-img" src="http://placehold.it/150x100" width="" height="" alt="">
+                  </a>
+                </p>
+                <p class="card-price">
+                <b>20000</b>
+                <a class="card-button" href="#">25000</a>
+                </p>
+              </div>
             </li>
             <li class= "products-item">
-              <h3 class="products-title"><a href="#">Перфоратор BOSCH</a></h3>
-              <p class="products-p">
-                <a href="#">
-                <img class="products-img" src="http://placehold.it/150x100" width="" height="" alt="">
-                </a>
-              </p>
-              <p class="products-price">
-              <b>20000</b>
-              <a class="products-button" href="#">25000</a>
-              </p>
+              <div class = "card">
+                <h3 class="card-title"><a href="#">Перфоратор BOSCH</a></h3>
+                <p class="card-p">
+                  <a href="#">
+                  <img class="card-img" src="http://placehold.it/150x100" width="" height="" alt="">
+                  </a>
+                </p>
+                <p class="card-price">
+                <b>20000</b>
+                <a class="card-button" href="#">25000</a>
+                </p>
+              </div>
             </li>
             <li class= "products-item">
-              <h3 class="products-title"><a href="#">Перфоратор BOSCH</a></h3>
-              <p class="products-p">
-                <a href="#">
-                <img class="products-img" src="http://placehold.it/150x100" width="" height="" alt="">
-                </a>
-              </p>
-              <p class="products-price">
-              <b>20000</b>
-              <a class="products-button" href="#">25000</a>
-              </p>
+              <div class = "card">
+                <h3 class="card-title"><a href="#">Перфоратор BOSCH</a></h3>
+                <p class="card-p">
+                  <a href="#">
+                  <img class="card-img" src="http://placehold.it/150x100" width="" height="" alt="">
+                  </a>
+                </p>
+                <p class="card-price">
+                <b>20000</b>
+                <a class="card-button" href="#">25000</a>
+                </p>
+              </div>
             </li>
             <li class= "products-item">
-              <h3 class="products-title"><a href="#">Перфоратор BOSCH</a></h3>
-              <p class="products-p">
-                <a href="#">
-                <img class="products-img" src="http://placehold.it/150x100" width="" height="" alt="">
-                </a>
-              </p>
-              <p class="products-price">
-              <b>20000</b>
-              <a class="products-button" href="#">25000</a>
-              </p>
+              <div class = "card">
+                <h3 class="card-title"><a href="#">Перфоратор BOSCH</a></h3>
+                <p class="card-p">
+                  <a href="#">
+                  <img class="card-img" src="http://placehold.it/150x100" width="" height="" alt="">
+                  </a>
+                </p>
+                <p class="card-price">
+                <b>20000</b>
+                <a class="card-button" href="#">25000</a>
+                </p>
+              </div>
             </li>
             <li class= "products-item">
-              <h3 class="products-title"><a href="#">Перфоратор BOSCH</a></h3>
-              <p class="products-p">
-                <a href="#">
-                <img class="products-img" src="http://placehold.it/150x100" width="" height="" alt="">
-                </a>
-              </p>
-              <p class="products-price">
-              <b>20000</b>
-              <a class="products-button" href="#">25000</a>
-              </p>
+              <div class = "card">
+                <h3 class="card-title"><a href="#">Перфоратор BOSCH</a></h3>
+                <p class="card-p">
+                  <a href="#">
+                  <img class="card-img" src="http://placehold.it/150x100" width="" height="" alt="">
+                  </a>
+                </p>
+                <p class="card-price">
+                <b>20000</b>
+                <a class="card-button" href="#">25000</a>
+                </p>
+              </div>
             </li>
             <li class= "products-item">
-              <h3 class="products-title"><a href="#">Перфоратор BOSCH</a></h3>
-              <p class="products-p">
-                <a href="#">
-                <img class="products-img" src="http://placehold.it/150x100" width="" height="" alt="">
-                </a>
-              </p>
-              <p class="products-price">
-              <b>20000</b>
-              <a class="products-button" href="#">25000</a>
-              </p>
+              <div class = "card">
+                <h3 class="card-title"><a href="#">Перфоратор BOSCH</a></h3>
+                <p class="card-p">
+                  <a href="#">
+                  <img class="card-img" src="http://placehold.it/150x100" width="" height="" alt="">
+                  </a>
+                </p>
+                <p class="card-price">
+                <b>20000</b>
+                <a class="card-button" href="#">25000</a>
+                </p>
+              </div>
             </li>
           </ul>
         <ul class="pagination__list">
