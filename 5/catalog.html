@@ -3,583 +3,297 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="http://allfont.ru/allfont.css?fonts=cuprum" rel="stylesheet" type="text/css" />
+    <link href="http://allfont.ru/allfont.css?fonts=pt-sans" rel="stylesheet" type="text/css" />
     <title>HTML Academy: Техномарт</title>
     <base href="https://htmlacademy-htmlcss.github.io/111572-technomart/5/">
 </head>
-  <body>
 
    <body>
-     <header class="header">
-       <div class="header__logo">
-         <div class = "logo">
-           <a href="" class = "logo__link"></a>
-         </div>
-       </div>
-       <div class = "header__search">
-         <form action="" class="search"></form>
-       </div>
-       <div class = "header__bookmarklet bookmarklet">
-       </div>
-       <div class = "header__cart">
-         <div class = "cart cart_empty"></div>
-       </div>
-       <div class="header__order"><a href = "" class="button"></a></div>
-     </header>
+    <div class="main__container ">
+      <header class="header">
+        <div class="header__content">
+          <div class="header__logo">
+            <div class = "logo">Техномарт</div>
+          </div>
+          <div class = "header__search">
+            <form action="" class="search">
+              <div class="search__img "></div>
+              <div class="search__text">Поиск:</div>
+            </form>
+          </div>
+          <div class = "header__bookmarklet">
+            <div class="bookmarkleth__img "></div>
+            <div class="bookmarkleth__text">Закладки: 0</div>
+            <div class="bookmarkleth__count "></div>
+          </div>
+          <div class = "header__cart">
+            <div class="cart__img "></div>
+            <div class="cart__text">Корзина: 0</div>
+            <div class="cart__count "></div>
+          </div>
+          <button class="header__order">Оформить заказ</button>
+        </div>
+      </header>
 
-     <main class = "container">
-       <h1 class="visually-hidden">Техномарт</h1>
+      <main class = "container">
 
-       <section class = "company">
-         <div class = "company__information">
-           <p class="information"></p>
-         </div>
-         <div class = "company_contacts">
-           <div class = "phone">
-             <img class="phone__icon" src="" alt="icon">
-             <a class ="phone__button">+7 (812) 555-05-55</a>
-           </div>
-           <div class = "address">
-             <address class="address__current"></address>
-           </div>
-           <div class="company__person">
-             <div class="person">
-               <div class="person__name ">
-                 <img class="person__name-avatar" src="" alt="">
-                 <p class="person__name-name">Равшан Джамшутович</p>
-                 <img class="person__name-icon" src="" alt="">
-               </div>
-             <div class="order">
-                 <a href="" class="order__link"></a>
-                 <a href="" class="account__link"></a>
-             </div>
-           </div>
-         </div>
-       </section>
+        <section class = "company">
+          <div class="company__content">
+            <div class="about__company">
+              <div class = "company__information">
+                <p class="information">Интернет-магазин <br> строительных материалов <br> и инструментов для ремонта</p>
+              </div>
+              <div class = "company__contacts">
+                <div class = "phone">
+                  <img class="phone__icon">
+                  <button class ="phone__button">+7 (812) 555-05-55</button>
+                </div>
+                <div class = "address">
+                  <address class="address__current">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+                </div>
+              </div>
+                <div class="company__auth">
+                  <div class="login">
+                    <button class="login__button login__button_enter">
+                      <div class="login__button__img"></div>
+                      <div class="login__button__text">Войти</div>
+                    </button>
+                  </div>
+                  <div class="reg">
+                    <button class="reg__button reg__button_enter">Регистрация</button>
+                  </div>
+                </div>
+            </div>
+            <nav class = "main__navigation">
+              <ul class = "nav">
+                <li class = "nav__item nav__item_active"><a href = "#">Главная</a></li>
+                <li class = "nav__item"><a href = "#">Компания</a></li>
+                <li class = "nav__item"><a href = "#">Каталог</a></li>
+                <li class = "nav__item"><a href = "#">Новости</a></li>
+                <li class = "nav__item"><a href = "#">Спецпредложения</a></li>
+                <li class = "nav__item"><a href = "#">Доставка</a></li>
+                <li class = "nav__item"><a href = "#">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+
 
     <ul class="breadcrumbs">
-      <li class="breadcrumbs__item"><img class="breadcrumbs__img" src="">ICON</li>
+      <li class="breadcrumbs__item"><img class="breadcrumbs__img" src="img/icon-home.png"></li>
+      <li class="breadcrumbs__item"><img class="breadcrumbs__img" src="img/icon-right-small.png"></li>
       <li class="breadcrumbs__item"><a href = "#">Каталог</a></li>
+      <li class="breadcrumbs__item"><img class="breadcrumbs__img" src="img/icon-right-small.png"></li>
       <li class="breadcrumbs__item"><a href = "#">Инструмент</a></li>
+      <li class="breadcrumbs__item"><img class="breadcrumbs__img" src="img/icon-right-small.png"></li>
       <li class="breadcrumbs__item breadcrumbs__item-current">Перфораторы</li>
     </ul>
 
     <h1 class="catalog__title">Перфораторы</h1>
 
-    <section class="filtres">
-      <h2 class="filtres__title visually-hidden">Фильтр товаров</h2>
-          <form class="filtres__form" method="get" action="https://echo.htmlacademy.ru">
-                <fieldset class="filtres__price">
-                  <legend class="filtres__legend">Цена:</legend>
-                </fieldset>
+    <div class="main">
+      <section class="filtres">
+        <h2 class="filtres__title visually-hidden">Фильтр:</h2>
+            <form class="filtres__form" method="get" action="https://echo.htmlacademy.ru">
+                  <fieldset class="filtres__price">
+                    <legend class="filtres__legend__price">Цена:</legend>
+                      <div class="filtres__slider">
+                        <div id="slider">
+                          <div class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" id="slider"></div>
+                          <input class="price__from" type="text" id="minCost" value="0"/>
+                          <input class="price__till" type="text" id="maxCost" value="30000"/>
+                      </div>
+                      </div>
+                  </fieldset>
 
-                <fieldset class="filtres__makers">
-                   <legend class="filtres__legend">Производители:</legend>
-                      <ul class="filtres__makers__list">
-                        <li class="filtres__makers__list__item filter-option"><input class = "visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch">BOSCH</li>
-                        <li class="filtres__makers__list__item filter-option"><input class = "visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol">ИНТЕРСКОЛ</li>
-                        <li class="filtres__makers__list__item filter-option"><input class = "visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita">MAKITA</li>
-                        <li class="filtres__makers__list__item filter-option"><input class = "visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt">DEWALT</li>
-                        <li class="filtres__makers__list__item filter-option"><input class = "visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi">HITACHI</li>
-                      </ul>
-                </fieldset>
+                  <fieldset class="filtres__makers">
+                     <legend class="filtres__legend-makers">Производители:</legend>
+                        <ul class="filtres__makers__list">
+                          <li class="filtres__makers__list__item filter-option"><input type="checkbox" id="box1"><label for="box1"><span></span>BOSCH</label></li>
+                          <li class="filtres__makers__list__item filter-option"><input type="checkbox" id="box2"><label for="box2"><span></span>Интерскол</label></li>
+                          <li class="filtres__makers__list__item filter-option"><input type="checkbox" id="box3"><label for="box3"><span></span>Makita</label></li>
+                          <li class="filtres__makers__list__item filter-option"><input type="checkbox" id="box4"><label for="box4"><span></span>DeWalt</label></li>
+                          <li class="filtres__makers__list__item filter-option"><input type="checkbox" id="box5"><label for="box5"><span></span>Hitachi</label></li>
+                        </ul>
+                  </fieldset>
 
-                <fieldset class="filtres__power">
-                   <legend class="filtres__legend">Питание:</legend>
-                        <ul class="filtres__power__list">
-                        <li class="filtres__power__list__item filter__option"><input class = "visually-hidden filter__input filter__input-radio" type="radio" name="battery">АККУМУЛЯТОРНЫЕ</li>
-                        <li class="filtres__power__list__item filter__option"><input class = "visually-hidden filter__input filter__input-radio" type="radio" name="network">СЕТЕВЫЕ</li>
-                      </ul>
-                </fieldset>
-                <button type = "submit" class="filter__button button">ПОКАЗАТЬ</button>
-          </form>
-    </section>
+                  <fieldset class="filtres__power">
+                     <legend class="filtres__legend-power">Питание:</legend>
+                          <ul class="filtres__power__list">
+                          <li class="filtres__power__list__item filter__option"><input type="radio" id="radio1"><label for="radio1"><span></span>АККУМУЛЯТОРНЫЕ</label></li>
+                          <li class="filtres__power__list__item filter__option"><input type="radio" id="radio2"><label for="radio2"><span></span>Cетевые</label></li>
+                        </ul>
+                  </fieldset>
+                  <button type = "submit" class="filter__button button">ПОКАЗАТЬ</button>
+            </form>
+      </section>
 
-    <section class="catalog">
-      <fieldset class="filtres__catalog">
-         <legend class="filtres__legend">Сортировка:</legend>
-              <ul class="filtres__catalog__list">
-              <li class="filtres__catalog__list__item filter__option"><a href="">По цене</a></li>
-              <li class="filtres__catalog__list__item filter__option"><a href="">По типу</a></li>
-              <li class="filtres__catalog__list__item filter__option"><a href="">По функционалу</a></li>
-            </ul>
-            <button type = "submit" class="filtres__catalog__button filtres__catalog__button-up">ПОКАЗАТЬ</button>
-            <button type = "submit" class="filtres__catalog__button filtres__catalog__button-down">ПОКАЗАТЬ</button>
-      </fieldset>
-      <h2 class="catalog__title visually-hidden">Каталог товаров</h2>
-          <ul class="products">
-            <li class= "products products-item">
-              <div class = "card">
-                  <h3 class="card__title">
-                    <a href="#">Перфоратор BOSCH</a>
-                  </h3>
-                  <p class="card__p">
-                    <a class = "card__link" href="#">
-                      <img class="card__img" src="http://placehold.it/150x100" width="" height="" alt="">
-                    </a>
-                  </p>
-                  <p class="card__price-old">
-                    20000
-                  <a class="card__button" href="#">25000</a>
-                  </p>
-            </div>
-            </li>
-            <li class= "products products-item">
-              <div class = "card">
-                  <h3 class="card__title">
-                    <a href="#">Перфоратор BOSCH</a>
-                  </h3>
-                  <p class="card__p">
-                    <a class = "card__link" href="#">
-                      <img class="card__img" src="http://placehold.it/150x100" width="" height="" alt="">
-                    </a>
-                  </p>
-                  <p class="card__price-old">
-                    20000
-                  <a class="card__button" href="#">25000</a>
-                  </p>
-            </div>
-            </li>
-            <li class= "products products-item">
-              <div class = "card">
-                <a class="card__link" href="#">
-                  <h3 class="card__title">Перфоратор BOSCH
-                  </h3>
-                  <p class="card__p">
-                      <img class="card__img" src="http://placehold.it/150x100" width="" height="" alt="">
-                  </p>
-                  <p class="card__price-old">
-                    20000
-                  </p>
-                  <p class="card__price-current">
-                    25000
-                  </p>
-                </a>
-            </div>
-            </li>
-            <li class= "products products-item">
-              <div class = "card">
-                  <h3 class="card__title">
-                    <a href="#">Перфоратор BOSCH</a>
-                  </h3>
-                  <p class="card__p">
-                    <a class = "card__link" href="#">
-                      <img class="card__img" src="http://placehold.it/150x100" width="" height="" alt="">
-                    </a>
-                  </p>
-                  <p class="card__price-old">
-                    20000
-                  <a class="card__button" href="#">25000</a>
-                  </p>
-            </div>
-            </li>
-            <li class= "products products-item">
-              <div class = "card">
-                  <h3 class="card__title">
-                    <a href="#">Перфоратор BOSCH</a>
-                  </h3>
-                  <p class="card__p">
-                    <a class = "card__link" href="#">
-                      <img class="card__img" src="http://placehold.it/150x100" width="" height="" alt="">
-                    </a>
-                  </p>
-                  <p class="card__price-old">
-                    20000
-                  <a class="card__button" href="#">25000</a>
-                  </p>
-            </div>
-            </li>
-            <li class= "products products-item">
-              <div class = "card">
-                  <h3 class="card__title">
-                    <a href="#">Перфоратор BOSCH</a>
-                  </h3>
-                  <p class="card__p">
-                    <a class = "card__link" href="#">
-                      <img class="card__img" src="http://placehold.it/150x100" width="" height="" alt="">
-                    </a>
-                  </p>
-                  <p class="card__price-old">
-                    20000
-                  <a class="card__button" href="#">25000</a>
-                  </p>
-            </div>
-            </li>
-            <li class= "products products-item">
-              <div class = "card">
-                  <h3 class="card__title">
-                    <a href="#">Перфоратор BOSCH</a>
-                  </h3>
-                  <p class="card__p">
-                    <a class = "card__link" href="#">
-                      <img class="card__img" src="http://placehold.it/150x100" width="" height="" alt="">
-                    </a>
-                  </p>
-                  <p class="card__price-old">
-                    20000
-                  <a class="card__button" href="#">25000</a>
-                  </p>
-            </div>
-            </li>
-            <li class= "products products-item">
-              <div class = "card">
-                <a class="card__link" href="#">
-                  <h3 class="card__title">Перфоратор BOSCH</h3>
-                  <p class="card__p">
-                      <img class="card__img" src="http://placehold.it/150x100" width="" height="" alt="">
-                  </p>
-                  <p class="card__price card__price_old">
-                          20000
-                  </p>
-                  <p class="card__price card__price_сurrent">
-                    20000
-                  </p>
-                </a>
-              </div>
-            </li>
-            <li class= "products products-item">
-              <div class = "card">
-<<<<<<< HEAD
-                <a class="card__link" href="#">
-                  <h3 class="card__title">Перфоратор BOSCH</h3>
-                  <p class="card__p">
-                      <img class="card__img" src="http://placehold.it/150x100" width="" height="" alt="">
-                  </p>
-                  <p class="card__price card__price_old">
-                          20000
-                  </p>
-                  <p class="card__price card__price_сurrent">
-                    20000
-                  </p>
-                </a>
-=======
-<<<<<<< HEAD
-                  <h3 class="card__title">
-                    <a href="#">Перфоратор BOSCH</a>
-                  </h3>
-                  <p class="card__p">
-                    <a class = "card__link" href="#">
-                      <img class="card__img" src="http://placehold.it/150x100" width="" height="" alt="">
-                    </a>
-                  </p>
-                  <p class="card__price-old">
-                    20000
-                  <a class="card__button" href="#">25000</a>
-                  </p>
-            </div>
-            </li>
-            <li class= "products-item">
-              <div class = "card">
-                  <h3 class="card__title">
-                    <a href="#">Перфоратор BOSCH</a>
-                  </h3>
-                  <p class="card__p">
-                    <a class = "card__link" href="#">
-                      <img class="card__img" src="http://placehold.it/150x100" width="" height="" alt="">
-                    </a>
-                  </p>
-                  <p class="card__price-old">
-                    20000
-                  <a class="card__button" href="#">25000</a>
-                  </p>
-            </div>
-            </li>
-            <li class= "products-item">
-              <div class = "card">
-                <a class="card__link" href="#">
-                  <h3 class="card__title">Перфоратор BOSCH
-                  </h3>
-                  <p class="card__p">
-                      <img class="card__img" src="http://placehold.it/150x100" width="" height="" alt="">
-                  </p>
-                  <p class="card__price-old">
-                    20000
-                  </p>
-                  <p class="card__price-current">
-                    25000
-                  </p>
-                </a>
-            </div>
-            </li>
-            <li class= "products-item">
-              <div class = "card">
-                  <h3 class="card__title">
-                    <a href="#">Перфоратор BOSCH</a>
-                  </h3>
-                  <p class="card__p">
-                    <a class = "card__link" href="#">
-                      <img class="card__img" src="http://placehold.it/150x100" width="" height="" alt="">
-                    </a>
-                  </p>
-                  <p class="card__price-old">
-                    20000
-                  <a class="card__button" href="#">25000</a>
-                  </p>
-            </div>
-            </li>
-            <li class= "products-item">
-              <div class = "card">
-                  <h3 class="card__title">
-                    <a href="#">Перфоратор BOSCH</a>
-                  </h3>
-                  <p class="card__p">
-                    <a class = "card__link" href="#">
-                      <img class="card__img" src="http://placehold.it/150x100" width="" height="" alt="">
-                    </a>
-                  </p>
-                  <p class="card__price-old">
-                    20000
-                  <a class="card__button" href="#">25000</a>
-                  </p>
-            </div>
-            </li>
-            <li class= "products-item">
-              <div class = "card">
-                  <h3 class="card__title">
-                    <a href="#">Перфоратор BOSCH</a>
-                  </h3>
-                  <p class="card__p">
-                    <a class = "card__link" href="#">
-                      <img class="card__img" src="http://placehold.it/150x100" width="" height="" alt="">
-                    </a>
-                  </p>
-                  <p class="card__price-old">
-                    20000
-                  <a class="card__button" href="#">25000</a>
-                  </p>
-            </div>
-            </li>
-            <li class= "products-item">
-              <div class = "card">
-                  <h3 class="card__title">
-                    <a href="#">Перфоратор BOSCH</a>
-                  </h3>
-                  <p class="card__p">
-                    <a class = "card__link" href="#">
-                      <img class="card__img" src="http://placehold.it/150x100" width="" height="" alt="">
-                    </a>
-                  </p>
-                  <p class="card__price-old">
-                    20000
-                  <a class="card__button" href="#">25000</a>
-                  </p>
-            </div>
-            </li>
-            <li class= "products-item">
-              <div class = "card">
-                  <h3 class="card__title">
-                    <a href="#">Перфоратор BOSCH</a>
-                  </h3>
-                  <p class="card__p">
-                    <a class = "card__link" href="#">
-                      <img class="card__img" src="http://placehold.it/150x100" width="" height="" alt="">
-                    </a>
-                  </p>
-                  <p class="card__price-old">
-                    20000
-                  <a class="card__button" href="#">25000</a>
-                  </p>
-            </div>
-            </li>
-            <li class= "products-item">
-              <div class = "card">
-                  <h3 class="card__title">
-                    <a href="#">Перфоратор BOSCH</a>
-                  </h3>
-                  <p class="card__p">
-                    <a class = "card__link" href="#">
-                      <img class="card__img" src="http://placehold.it/150x100" width="" height="" alt="">
-                    </a>
-                  </p>
-                  <p class="card__price-old">
-                    20000
-                  <a class="card__button" href="#">25000</a>
-                  </p>
-            </div>
-=======
-                <h3 class="card-title"><a href="#">Перфоратор BOSCH</a></h3>
-                <p class="card-p">
-                  <a href="#">
-                  <img class="card-img" src="http://placehold.it/150x100" width="" height="" alt="">
-                  </a>
-                </p>
-                <p class="card-price">
-                <b>20000</b>
-                <a class="card-button" href="#">25000</a>
-                </p>
->>>>>>> 18f9213da962c036541b1700ecaba06d82ecb23a
-              </div>
-            </li>
-            <li class= "products products-item">
-              <div class = "card">
-                <a class="card__link" href="#">
-                  <h3 class="card__title">Перфоратор BOSCH</h3>
-                  <p class="card__p">
-                      <img class="card__img" src="http://placehold.it/150x100" width="" height="" alt="">
-                  </p>
-                  <p class="card__price card__price_old">
-                          20000
-                  </p>
-                  <p class="card__price card__price_сurrent">
-                    20000
-                  </p>
-                </a>
-              </div>
-            </li>
-            <li class= "products products-item">
-              <div class = "card">
-                <a class="card__link" href="#">
-                  <h3 class="card__title">Перфоратор BOSCH</h3>
-                  <p class="card__p">
-                      <img class="card__img" src="http://placehold.it/150x100" width="" height="" alt="">
-                  </p>
-                  <p class="card__price card__price_old">
-                          20000
-                  </p>
-                  <p class="card__price card__price_сurrent">
-                    20000
-                  </p>
-                </a>
-              </div>
-            </li>
-            <li class= "products products-item">
-              <div class = "card">
-                <a class="card__link" href="#">
-                  <h3 class="card__title">Перфоратор BOSCH</h3>
-                  <p class="card__p">
-                      <img class="card__img" src="http://placehold.it/150x100" width="" height="" alt="">
-                  </p>
-                  <p class="card__price card__price_old">
-                          20000
-                  </p>
-                  <p class="card__price card__price_сurrent">
-                    20000
-                  </p>
-                </a>
-              </div>
-            </li>
-            <li class= "products products-item">
-              <div class = "card">
-                <a class="card__link" href="#">
-                  <h3 class="card__title">Перфоратор BOSCH</h3>
-                  <p class="card__p">
-                      <img class="card__img" src="http://placehold.it/150x100" width="" height="" alt="">
-                  </p>
-                  <p class="card__price card__price_old">
-                          20000
-                  </p>
-                  <p class="card__price card__price_сurrent">
-                    20000
-                  </p>
-                </a>
-              </div>
-            </li>
-            <li class= "products products-item">
-              <div class = "card">
-                <a class="card__link" href="#">
-                  <h3 class="card__title">Перфоратор BOSCH</h3>
-                  <p class="card__p">
-                      <img class="card__img" src="http://placehold.it/150x100" width="" height="" alt="">
-                  </p>
-                  <p class="card__price card__price_old">
-                          20000
-                  </p>
-                  <p class="card__price card__price_сurrent">
-                    20000
-                  </p>
-                </a>
-              </div>
-            </li>
-            <li class= "products products-item">
-              <div class = "card">
-                <a class="card__link" href="#">
-                  <h3 class="card__title">Перфоратор BOSCH</h3>
-                  <p class="card__p">
-                      <img class="card__img" src="http://placehold.it/150x100" width="" height="" alt="">
-                  </p>
-                  <p class="card__price card__price_old">
-                          20000
-                  </p>
-                  <p class="card__price card__price_сurrent">
-                    20000
-                  </p>
-                </a>
-              </div>
-            </li>
-            <li class= "products products-item">
-              <div class = "card">
-                <a class="card__link" href="#">
-                  <h3 class="card__title">Перфоратор BOSCH</h3>
-                  <p class="card__p">
-                      <img class="card__img" src="http://placehold.it/150x100" width="" height="" alt="">
-                  </p>
-                  <p class="card__price card__price_old">
-                          20000
-                  </p>
-                  <p class="card__price card__price_сurrent">
-                    20000
-                  </p>
-                </a>
-              </div>
-            </li>
-            <li class= "products products-item">
-              <div class = "card">
-                <a class="card__link" href="#">
-                  <h3 class="card__title">Перфоратор BOSCH</h3>
-                  <p class="card__p">
-                      <img class="card__img" src="http://placehold.it/150x100" width="" height="" alt="">
-                  </p>
-                  <p class="card__price card__price_old">
-                          20000
-                  </p>
-                  <p class="card__price card__price_сurrent">
-                    20000
-                  </p>
-                </a>
-              </div>
->>>>>>> 5b2e96025dcb8c1a830c79431f04ea3b728f5421
-            </li>
-          </ul>
-        <ul class="pagination__list">
-          <li class="pagination__list-item"><a href="#">1</a></li>
-          <li class="pagination__list-item pagination__list-item-current">2</li>
-          <li class="pagination__list-item ">3</li>
-          <li class="pagination__list-item ">4</li>
-          <li class="pagination__list-item ">5</li>
-        </ul>
+        <section class = "main__servicies">
+          <fieldset class="filtres__catalog-sort">
+             <legend class="filtres__legend-sort">Сортировка:</legend>
+                  <ul class="filtres__catalog__list">
+                  <li class="filtres__catalog__list__item filter__option"><a href="">По цене</a></li>
+                  <li class="filtres__catalog__list__item filter__option"><a href="">По типу</a></li>
+                  <li class="filtres__catalog__list__item filter__option"><a href="">По функционалу</a></li>
+                </ul>
+                <button type = "submit" class="filtres__catalog__button filtres__catalog__button-up"></button>
+                <button type = "submit" class="filtres__catalog__button filtres__catalog__button-down"></button>
+          </fieldset>
+             <div class="catalog-items-main">
+           <div class="catalog-item-main">
+             <div class="actions">
+               <a href="#" class="buy">Купить</a>
+               <a href="#" class="bookmark">В закладки</a>
+             </div>
+             <div class="image"><img width="184" height="164" src="img/hit_1.png"></div>
+             <div class="title">Перфоратор BOSCH BFG 3000</div>
+             <div class="discount">22 500 Р.</div>
+             <div class="price">15 500 Р.</div>
+           </div>
+           <div class="catalog-item-main">
+             <div class="actions">
+               <a href="#" class="buy">Купить</a>
+               <a href="#" class="bookmark">В закладки</a>
+             </div>
+             <div class="image"><img width="184" height="164" src="img/hit_1.png"></div>
+             <div class="title">Перфоратор BOSCH BFG 3000</div>
+             <div class="discount">22 500 Р.</div>
+             <div class="price">15 500 Р.</div>
+           </div>
+           <div class="catalog-item-main">
+             <div class="actions">
+               <a href="#" class="buy">Купить</a>
+               <a href="#" class="bookmark">В закладки</a>
+             </div>
+             <div class="image"><img width="184" height="164" src="img/hit_1.png"></div>
+             <div class="title">Перфоратор BOSCH BFG 3000</div>
+             <div class="discount">22 500 Р.</div>
+             <div class="price">15 500 Р.</div>
+           </div>
+           <div class="catalog-item-main">
+             <div class="flag flag-new">новинка</div>
+             <div class="actions">
+               <a href="#" class="buy">Купить</a>
+               <a href="#" class="bookmark">В закладки</a>
+             </div>
+             <div class="image"><img width="184" height="164" src="img/hit_1.png"></div>
+             <div class="title">Перфоратор BOSCH BFG 3000</div>
+             <div class="discount"></div>
+             <div class="price">15 500 Р.</div>
+           </div>
+           <div class="catalog-item-main">
+             <div class="flag flag-new">новинка</div>
+             <div class="actions">
+               <a href="#" class="buy">Купить</a>
+               <a href="#" class="bookmark">В закладки</a>
+             </div>
+             <div class="image"><img width="184" height="164" src="img/hit_1.png"></div>
+             <div class="title">Перфоратор BOSCH BFG 3000</div>
+             <div class="discount"></div>
+             <div class="price">15 500 Р.</div>
+           </div>
+           <div class="catalog-item-main">
+             <div class="flag flag-new">новинка</div>
+             <div class="actions">
+               <a href="#" class="buy">Купить</a>
+               <a href="#" class="bookmark">В закладки</a>
+             </div>
+             <div class="image"><img width="184" height="164" src="img/hit_1.png"></div>
+             <div class="title">Перфоратор BOSCH BFG 3000</div>
+             <div class="discount"></div>
+             <div class="price">15 500 Р.</div>
+           </div>
+           <div class="catalog-item-main">
+             <div class="flag flag-new">новинка</div>
+             <div class="actions">
+               <a href="#" class="buy">Купить</a>
+               <a href="#" class="bookmark">В закладки</a>
+             </div>
+             <div class="image"><img width="184" height="164" src="img/hit_1.png"></div>
+             <div class="title">Перфоратор BOSCH BFG 3000</div>
+             <div class="discount"></div>
+             <div class="price">15 500 Р.</div>
+           </div>
+           <div class="catalog-item-main">
+             <div class="flag flag-new">новинка</div>
+             <div class="actions">
+               <a href="#" class="buy">Купить</a>
+               <a href="#" class="bookmark">В закладки</a>
+             </div>
+             <div class="image"><img width="184" height="164" src="img/hit_1.png"></div>
+             <div class="title">Перфоратор BOSCH BFG 3000</div>
+             <div class="discount"></div>
+             <div class="price">15 500 Р.</div>
+           </div>
+           <div class="catalog-item-main">
+             <div class="flag flag-new">новинка</div>
+             <div class="actions">
+               <a href="#" class="buy">Купить</a>
+               <a href="#" class="bookmark">В закладки</a>
+             </div>
+             <div class="image"><img width="184" height="164" src="img/hit_1.png"></div>
+             <div class="title">Перфоратор BOSCH BFG 3000</div>
+             <div class="discount"></div>
+             <div class="price">15 500 Р.</div>
+           </div>
+         </div>
+         <ul class="pagination__list">
+           <li class="pagination__list-item"><a href="#">1</a></li>
+           <li class="pagination__list-item pagination__list-item-current"><a href="#">2</a></li>
+           <li class="pagination__list-item "><a href="#">3</a></li>
+           <li class="pagination__list-item pagination__list-item-next"><a href="#">Следующая</a></li>
+         </ul>
+        </section>
+    </div>
+
+
+    <section>
+      <div class="about_instruments">
+        <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
+        <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. </br>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
+        В </br> ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+      </div>
     </section>
     </main>
 
     <footer class="footer">
       <nav class="footer__navigation">
-         <a class="footer__navigation-logo">
-           <img src="img/logo.png" width="220" height="45" alt="Техномарт">
-         </a>
-         <p class="footer__navigation-p">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-</p>
-         <p>+7(812)555-05-55</p>
-         <ul class="menu">
+        <div class="footer__logo">
+          <div class = "logo">Техномарт</div>
+        </div>
+         <p class="footer__navigation-p">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+         <p class="footer__navigation-p">+7 (812) 555-05-55</p>
+         <ul class="menu__top">
            <li class="menu__li"><a href="#">Компания</a></li>
            <li class="menu__li"><a href="#">Новости</a></li>
            <li class="menu__li"><a href="#">Каталог</a></li>
            <li class="menu__li"><a href="#">Доставка</a></li>
            <li class="menu__li"><a href="#">Контакты</a></li>
-           <li class="menu__li"><a href="#">Материалы</a></li>
-           <li class="menu__li"><a href="#">Техника</a></li>
-           <li class="menu__li"><a href="#">Инструмент</a></li>
-           <li class="menu__li"><a href="#">Спецпредложения</a></li>
+         </ul>
+         <ul class="menu__bottom">
+           <li class="menu__bottom__li"><a href="#">Материалы</a></li>
+           <li class="menu__bottom__li"><a href="#">Техника</a></li>
+           <li class="menu__bottom__li"><a href="#">Инструмент</a></li>
+           <li class="menu__bottom__li"><a href="#">Спецпредложения</a></li>
          </ul>
       </nav>
        <div class="footer__bottom">
-        <p class="footer__bottom-p"></p>
+         <div class="footer__bottom__container">
+        <p class="footer__bottom-social-p footer__bottom-social_copy">© 2010–2017 Компания «Техномарт» <br>Все права защищены.</p>
         <ul class="footer__bottom-social">
-          <li class="footer__bottom-social-li footer__bottom-social-li_vk"></li>
-          <li class="footer__bottom-social-li footer__bottom-social-li_fb"></li>
-          <li class="footer__bottom-social-li footer__bottom-social-li_ig"></li>
+          <li class="footer__bottom-social-li footer__bottom-social-li_vk"><img src = "img/vk-icon.png" width = "41" height = "42"></li>
+          <li class="footer__bottom-social-li footer__bottom-social-li_fb"><img src = "img/fb-icon.png" width = "42" height = "42"></li>
+          <li class="footer__bottom-social-li footer__bottom-social-li_ig"><img src = "img/insta-icon.png" width = "42" height = "42"></li>
         </ul>
-        <p class="footer__bottom-social-p footer__bottom-social_copy">© 2010–2017 Компания «Техномарт» Все права защищены.</p>
-        <p class="footer__bottom-social-p footer__bottom-social_email">Обратная связь: mail@htmlacademy.ru</p>
-        <p class="footer__bottom-social-p footer__bottom-social_css">Разработано — htmlacademy.ru</p>
+        <p class="footer__bottom-social-p footer__bottom-social_email">Обратная связь: <br>mail@htmlacademy.ru</p>
+        <p class="footer__bottom-social-p footer__bottom-social_css">Разработано — <br>htmlacademy.ru</p>
+       </div>
       </div>
     </footer>
-	</footer>
+  </div>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/ui-slider.js"></script>
+  <script type="text/javascript" src="js/slider.js"></script>
   </body>
 </html>
